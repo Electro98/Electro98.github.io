@@ -1,4 +1,28 @@
 
+h1, h2, h3, h4, h5, h6, .Title {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.SideNote {
+    color: darkgrey;
+}
+
+html {
+  font-family: "Comfortaa", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
     background-color: #f5f5f5;
 }
@@ -14,6 +38,10 @@ header {
 
 header > .Title {
     text-align: center;
+}
+
+header > footer {
+    margin-top: 0.5em;
 }
 
 .ProjectsShowcase {
@@ -48,6 +76,11 @@ header > .Title {
     color: white;
 }
 
+.ProjectPreview > .Title > a {
+    color: white;
+    text-decoration: none;
+}
+
 .ProjectPreview > .Description,
 .ProjectPreview > .Footer {
     display: none;
@@ -55,13 +88,13 @@ header > .Title {
     color: white;
 }
 
-.ProjectPreview:hover > .Title,
-.ProjectPreview:hover > .Description {
-    display: block;
+.ProjectPreview:hover > .Title {
     position: static;
+    background-color: #272727ab;
 }
 
 .ProjectPreview:hover > .Description {
+    display: block;
     padding: 1em;
 }
 
@@ -70,6 +103,11 @@ header > .Title {
     flex-flow: row nowrap;
     justify-content: space-between;
     padding: 0 0.5em 0.5em 0.5em;
+}
+
+.Blog *> .Code {
+    background-color: #4d4d4d28;
+    padding: 0 0.25em;
 }
 
 footer {
