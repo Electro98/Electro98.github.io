@@ -123,3 +123,13 @@ footer > .Mark {
 footer > .Contacts {
     text-align: right;
 }
+
+
+@media (max-width: 800px) {
+    body {
+        width: calc(100% - 2em);
+    }
+    .ProjectPreview {
+        width: calc(100% - 1em);
+    }
+}
